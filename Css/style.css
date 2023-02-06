@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing:0;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 1170px;
+    margin:auto;
+}
+.row{
+    display: flex ;
+    flex-wrap: wrap;
+}
+/*  //navigation Section Css Start */
+#navbar{
+    background-color: #02918b;
+}
+#navbar div.row{
+    justify-content: space-between;
+    align-items: center;
+}
+#navbar ul li a{
+    font-size: 12px;
+    font-weight: 800 ;
+    margin: 20px 0;
+    padding: 12px 25px ;
+    transition: 0.5s; ;
+    text-transform: uppeer-case;
+    display: inline-block;
+    border-radius: 5px 15px 5px 15px ;
+    color: #ffffff;
+}
+#navbar ul li:hover a{
+    background-color: #cfc91d;
+    color: black ;
+}
+/*  //navigation Section Css End */
+
+
+/*  //Banneer Section Css Start */
+#banner{
+    background-image: url(../img/banner_bg.jpg);
+    height: 728px;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    position:relative;
+    z-index: 1;
+}
+#banner div.container{
+    height: 100%;
+}
+#banner div.row{
+    align-items: center;
+    justify-content:center;
+    height: 100%;
+}
+#banner::after{
+    content: '';
+    position: absolute;
+    background-color: black;
+    inset: 0;
+    opacity:0.7;
+    z-index: -1;
+}
+#banner h3{
+    font-size: 30px;
+    font-weight: 400;   
+}
+#banner h1{
+    font-size: 68px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 30px;
+}
+#banner img{
+    display: block;
+    margin: 52px auto;
+}
+#banner a{
+    font-size: 14px;
+    color: #0b1016;
+    font-weight: 800;
+    text-transform: uppercase;
+     background-color: #cfc91d;
+     padding: 19px 42px;
+     display: inline-block;
+     letter-spacing: 2px;
+}
+/* banner section Css end */
+
+/* -- about me section  Css start */
+#AboutMe{
+    margin: 95px auto;
+    text-align: center;
+    color:#7e8287;
+}
+#AboutMe h2{
+    font-size: 46px;
+    font-weight: 800;
+    color:#02918c;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+#AboutMe p{
+    margin: 35px 0 120px;
+    line-height: 2;
+    font-size: 16px;
+}
+#AboutMe .row{
+    justify-content:space-evenly;
+    align-items: center;
+}
+#AboutMe .row img{
+    margin-bottom: 28px;
+}
+#AboutMe .row h4{
+    font-size: 16px;
+    font-weight: 800;
+}
+#AboutMe .row p{
+    font-size: 11px;
+}
+/* -- about me section Css end */ 
